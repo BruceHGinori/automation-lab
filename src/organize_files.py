@@ -17,6 +17,11 @@ def main():
 
     if folder_path.exists():
         print("\nFolder found!")
+        print("\nContents:")
+
+        for item in folder_path.iterdir():
+            print(f" - {item.name}")
+
     else:
         print("\nFolder not found.")
 
