@@ -39,3 +39,29 @@ Create the first functional version of the file organizer.
 ### Next Steps
 - Filter only files.
 - Group files by extension.
+
+## Day 3
+
+### Objective
+
+Refactor the file organizer to separate file discovery from the main program flow.
+
+### Completed
+
+- Created the `get_files()` helper function.
+- Added file filtering using `Path.is_file()`.
+- Updated the main program to use the new helper function.
+- Tested the program with directories containing both files and subdirectories.
+
+### Learned
+
+- How to create and use helper functions in Python.
+- How to iterate through directory contents using `Path.iterdir()`.
+- The difference between files and directories using `Path.is_file()`.
+- Basic separation of responsibilities between functions.
+
+### Next Steps
+
+- Refactor the main program flow.
+- Improve handling of invalid paths.
+- Begin categorizing files by extension.
