@@ -65,3 +65,29 @@ Refactor the file organizer to separate file discovery from the main program flo
 - Refactor the main program flow.
 - Improve handling of invalid paths.
 - Begin categorizing files by extension.
+
+## Day 4
+
+### Objective
+
+Improve directory validation and simplify the main program flow.
+
+### Completed
+
+- Refactored directory validation using early returns.
+- Added validation to check whether the provided path exists.
+- Added validation to check whether the provided path is a directory.
+- Removed the large `if/else` block from the main program flow.
+- Tested the application with valid directories, invalid paths, and file paths.
+
+### Learned
+
+- How early returns can simplify conditional logic.
+- How to structure a function using guard clauses.
+- The difference between validating a path and validating its type.
+
+### Next Steps
+
+- Improve user input handling.
+- Start categorizing files by extension.
+- Prepare the logic for creating destination folders.
