@@ -23,17 +23,21 @@ def main():
 
     folder_path = Path(folder)
 
-    if folder_path.exists():
-        print("\nFolder found!")
-        print("\nContents:")
+    if not folder_path.exists():
+        print("\nPath not found.")
+        return
 
-        files = get_files(folder_path)
+    if not folder_path.is_dir():
+        print("\nThe specified path is not a directory.")
+        return
 
-        for file in files:
-            print(file.name)
+    print("\nFolder found!")
+    print("\nContents:")
 
-    else:
-        print("\nFolder not found.")
+    files = get_files(folder_path)
+
+    for file in files:
+        print(file.name)
 
 
 if __name__ == "__main__":
